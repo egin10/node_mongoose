@@ -54,7 +54,7 @@ router.post('/add', (req, res) => {
 router.post('/update', (req, res) => {
     student.update({ "nim": req.body.nimLama },
         { "nim": req.body.nim, "nama": req.body.nama },
-        (err, data) => {
+        (err) => {
             if (err) {
                 res.send(err);
             }
