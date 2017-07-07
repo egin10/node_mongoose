@@ -1,8 +1,8 @@
 const express = require('express'),
     mongoose = require('mongoose'),
-    config = require('./database'),
+    config = require('./../config/database'),
     router = express.Router(),
-    student = require('./studentModel');
+    student = require('./../models/student');
 
 // Hubungkan ke database
 mongoose.connect(config.database);
